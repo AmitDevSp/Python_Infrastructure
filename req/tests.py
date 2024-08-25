@@ -50,7 +50,6 @@ def add_test_cases_to_suite(plan_id, suite_id, test_case_ids):
     return test_suite_entries
 
 
-<<<<<<< HEAD
 def remove_test_cases_from_suite(plan_id, suite_id, test_case_ids):
     test_suite_entries = TestClient.remove_test_cases_from_suite_url(self=test_client(), project=project_name, plan_id=plan_id, suite_id=suite_id, test_case_ids=test_case_ids)
     return test_suite_entries
@@ -71,5 +70,3 @@ def get_logs_path(run_id, test_case_result_id):
     content = TestClient.get_test_result_attachment_content(self=test_client(), project=project_name, run_id=run_id, test_case_result_id= test_case_result_id, attachment_id=attachment.id)
     logs_path = ''.join([chunk.decode('utf-8') for chunk in content])
     return logs_path
-=======
->>>>>>> 0d4b7341acf5c2865570683c87bab1a4509717fb
